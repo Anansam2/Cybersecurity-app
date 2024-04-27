@@ -1,0 +1,144 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #051937, #004d7a);
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.title{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.profile {
+    float: right;
+    margin-top: 20px;
+}
+
+.profile-info {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.profile-info span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.lesson {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lesson:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.lesson-title {
+    color: #fff;
+    margin-top: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.lesson-description {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.start-button:hover {
+    background-color: #ff412b;
+}
+
+.footer {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1.2rem;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+#logoutBtn{
+    color:#004d7a;
+    padding: 1px 2px 1px 2px;
+    font-weight: bolder;
+    background-color: #778497;
+}

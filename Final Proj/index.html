@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Training App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">Cybersecurity Training App</h1>
+            <div class="profile">
+                <!-- Profile Section -->
+                <div class="profile-info">
+                </div>
+                <!-- Profile Avatar (Optional) -->
+                <!-- Logout Button -->
+                <button id="logoutBtn" onclick="logout()">LOGOUT <i class="fas fa-sign-out-alt"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="lesson-section">
+            <div class="container">
+                <h2 class="section-title">Explore Our Lessons</h2>
+                <div class="lesson" id="cyberLesson">
+                    <h3 class="lesson-title">Cybersecurity Basics</h3>
+                    <p class="lesson-description">Discover the fundamentals of cybersecurity.</p>
+                    <button class="start-button" onclick="startLesson('Cybersecurity Basics')">Start Learning</button>
+                </div>
+
+                <div class="lesson" id="networkLesson">
+                    <h3 class="lesson-title">Networking Essentials</h3>
+                    <p class="lesson-description">Dive into the basics of networking.</p>
+                    <button class="start-button" onclick="startLesson('Networking Essentials')">Start Learning</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">&copy; 2024 Cybersecurity Training App</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Retrieve username from local storage and display in profile section
+        const username = localStorage.getItem('username');
+        if (username) {
+            document.getElementById('username').textContent = username;
+            document.getElementById('welcomeMsg').textContent = 'Welcome, ' + username + '!';
+        }
+
+        // Function to logout
+        function logout() {
+            // Clear local storage
+            localStorage.removeItem('username');
+            // Redirect to login page
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+
+</html>

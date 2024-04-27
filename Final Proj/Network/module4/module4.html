@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4: DNS and DHCP</title>
+    <link rel="stylesheet" href="module4.css">
+</head>
+<body>
+    <script type="text/javascript" src="module4.js"></script>
+    <header>
+        <h1>Module 4: DNS and DHCP</h1>
+    </header>
+
+    <main>
+        <section id="lesson">
+            <h2>Lesson</h2>
+            <p><strong>Introduction</strong></p>
+            <p>In Module 4, we delve into the essential services of DNS (Domain Name System) and DHCP (Dynamic Host Configuration Protocol). These services play pivotal roles in modern networking environments, ensuring efficient communication, seamless data access, and simplified network management.</p>
+
+            <p><strong>DNS (Domain Name System)</strong></p>
+            <p>The Domain Name System (DNS) is a hierarchical system that translates human-friendly domain names into IP addresses, which are used by computers to identify each other on the network. DNS facilitates the translation of domain names into IP addresses, enabling users to access websites and other network resources using easily recognizable names instead of numerical IP addresses.</p>
+
+            <p><strong>DHCP (Dynamic Host Configuration Protocol)</strong></p>
+            <p>The Dynamic Host Configuration Protocol (DHCP) is a network management protocol used to automate the assignment of IP addresses and other network configuration parameters to devices on a network. DHCP simplifies the process of network configuration by dynamically allocating IP addresses to devices, ensuring efficient use of available IP address space and reducing manual configuration efforts.</p>
+
+            <p><strong>Benefits of DNS and DHCP</strong></p>
+            <ul>
+                <li><strong>DNS:</strong> Simplifies website access, enhances user experience, and facilitates network resource identification.</li>
+                <li><strong>DHCP:</strong> Automates IP address allocation, streamlines network management, and reduces administrative overhead.</li>
+            </ul>
+
+            <p><strong>Conclusion</strong></p>
+            <p>In Module 4, we explored the fundamental concepts of DNS and DHCP, emphasizing their significance in modern networking environments. By understanding the roles, benefits, and implementation of DNS and DHCP, network administrators can effectively manage network resources, optimize network performance, and ensure seamless connectivity.</p>
+        </section>
+
+        <section id="quizzes">
+            <h2>Quizzes</h2>
+
+            <form id="quizForm" onsubmit="checkAnswers(event)">
+                <!-- Quiz 1 -->
+                <div class="quiz-item">
+                    <p>1. What does DNS stand for?</p>
+                    <label><input type="radio" name="q1" value="a"> Dynamic Network System</label><br>
+                    <label><input type="radio" name="q1" value="b"> Domain Name System</label><br>
+                    <label><input type="radio" name="q1" value="c"> Data Network Service</label><br>
+                    <label><input type="radio" name="q1" value="d"> Digital Network Security</label><br>
+                </div>
+
+                <!-- Quiz 2 -->
+                <div class="quiz-item">
+                    <p>2. What is the primary role of DNS?</p>
+                    <label><input type="radio" name="q2" value="a"> Assigning IP addresses</label><br>
+                    <label><input type="radio" name="q2" value="b"> Translating domain names to IP addresses</label><br>
+                    <label><input type="radio" name="q2" value="c"> Managing network traffic</label><br>
+                    <label><input type="radio" name="q2" value="d"> Data encryption</label><br>
+                </div>
+
+                <!-- Quiz 3 -->
+                <div class="quiz-item">
+                    <p>3. What does DHCP stand for?</p>
+                    <label><input type="radio" name="q3" value="a"> Dynamic Host Configuration Protocol</label><br>
+                    <label><input type="radio" name="q3" value="b"> Domain Host Configuration Protocol</label><br>
+                    <label><input type="radio" name="q3" value="c"> Digital Host Configuration Protocol</label><br>
+                    <label><input type="radio" name="q3" value="d"> Data Host Configuration Protocol</label><br>
+                </div>
+
+                <!-- Quiz 4 -->
+                <div class="quiz-item">
+                    <p>4. What is the primary function of DHCP?</p>
+                    <label><input type="radio" name="q4" value="a"> Data encryption</label><br>
+                    <label><input type="radio" name="q4" value="b"> Dynamic allocation of IP addresses</label><br>
+                    <label><input type="radio" name="q4" value="c"> Network monitoring</label><br>
+                    <label><input type="radio" name="q4" value="d"> Data storage</label><br>
+                </div>
+
+                <!-- Quiz 5 -->
+                <div class="quiz-item">
+                    <p>5. Which protocol is used by DNS for translating domain names to IP addresses?</p>
+                    <label><input type="radio" name="q5" value="a"> HTTP</label><br>
+                    <label><input type="radio" name="q5" value="b"> FTP</label><br>
+                    <label><input type="radio" name="q5" value="c"> UDP</label><br>
+                    <label><input type="radio" name="q5" value="d"> TCP</label><br>
+                </div>
+
+                <!-- Quiz 6 -->
+                <div class="quiz-item">
+                    <p>6. What is the default port number for DNS?</p>
+                    <label><input type="radio" name="q6" value="a"> 21</label><br>
+                    <label><input type="radio" name="q6" value="b"> 53</label><br>
+                    <label><input type="radio" name="q6" value="c"> 80</label><br>
+                    <label><input type="radio" name="q6" value="d"> 443</label><br>
+                </div>
+
+                <!-- Quiz 7 -->
+                <div class="quiz-item">
+                    <p>7. Which DHCP message is used by a client to request an IP address from a DHCP server?</p>
+                    <label><input type="radio" name="q7" value="a"> DISCOVER</label><br>
+                    <label><input type="radio" name="q7" value="b"> OFFER</label><br>
+                    <label><input type="radio" name="q7" value="c"> REQUEST</label><br>
+                    <label><input type="radio" name="q7" value="d"> ACK</label><br>
+                </div>
+
+                <!-- Quiz 8 -->
+                <div class="quiz-item">
+                    <p>8. What is the role of a DHCP server?</p>
+                    <label><input type="radio" name="q8" value="a"> Assigning static IP addresses</label><br>
+                    <label><input type="radio" name="q8" value="b"> Managing DNS records</label><br>
+                    <label><input type="radio" name="q8" value="c"> Assigning dynamic IP addresses</label><br>
+                    <label><input type="radio" name="q8" value="d"> Data encryption</label><br>
+                </div>
+
+                <!-- Quiz 9 -->
+                <div class="quiz-item">
+                    <p>9. Which DNS record type specifies the mail server for a domain?</p>
+                    <label><input type="radio" name="q9" value="a"> A</label><br>
+                    <label><input type="radio" name="q9" value="b"> CNAME</label><br>
+                    <label><input type="radio" name="q9" value="c"> MX</label><br>
+                    <label><input type="radio" name="q9" value="d"> TXT</label><br>
+                </div>
+
+                <!-- Quiz 10 -->
+                <div class="quiz-item">
+                    <p>10. What is the role of a DNS resolver?</p>
+                    <label><input type="radio" name="q10" value="a"> Translating domain names to IP addresses</label><br>
+                    <label><input type="radio" name="q10" value="b"> Assigning IP addresses</label><br>
+                    <label><input type="radio" name="q10" value="c"> Managing DHCP leases</label><br>
+                    <label><input type="radio" name="q10" value="d"> Data encryption</label><br>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                </div>
+            </form>
+
+            <div id="results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cybersecurity Training App</p>
+    </footer>
+
+    <script src="module4.js"></script>
+</body>
+</html>

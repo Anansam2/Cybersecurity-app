@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3: Networking Essentials</title>
+    <link rel="stylesheet" href="module3.css">
+    
+</head>
+<body>
+    <<script type="text/javascript" src="module3.js"></script>
+    <header>
+        <h1>Module 3: Networking Essentials</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>Welcome to Module 3: Networking Essentials. This module focuses on the fundamental concepts of networking, including IP addressing, subnetting, router configuration, and firewall setup. Understanding these concepts is crucial for building and maintaining secure and efficient networks. By the end of this module, you will have a solid understanding of networking basics, enabling you to set up and manage networking devices effectively.</p>
+        </section>
+
+        <section>
+            <h2>IP Addressing</h2>
+            <p>IP addressing is a critical aspect of networking, serving as the foundation for communication between devices on a network. An IP address uniquely identifies each device on a network, allowing data packets to be routed to the correct destination. There are two primary versions of IP addresses in use today: IPv4 and IPv6.</p>
+            <p>IPv4 addresses are 32-bit numbers, typically represented in dotted-decimal notation (e.g., 192.168.0.1). Due to the limited number of available IPv4 addresses, IPv6 was developed to provide a much larger address space using 128-bit addresses (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).</p>
+        </section>
+
+        <section>
+            <h2>Subnetting</h2>
+            <p>Subnetting is the process of dividing a larger network into smaller, more manageable sub-networks or subnets. This technique helps optimize network performance and security by reducing broadcast traffic and isolating network segments.</p>
+            <p>When subnetting, you allocate a portion of the network's IP address space to each subnet, typically using subnet masks to define the boundaries of each subnet. This allows for more efficient use of IP addresses and provides greater control over network traffic flow.</p>
+        </section>
+
+        <section>
+            <h2>Router Configuration</h2>
+            <p>Routers play a crucial role in network communication, acting as gateways that forward data packets between different networks. To function effectively, routers need to be properly configured with routing tables that define how data should be forwarded to its destination.</p>
+            <p>Additionally, routers can be configured to perform Network Address Translation (NAT), which allows multiple devices on a local network to share a single public IP address. This technique helps conserve public IP addresses and adds an extra layer of security by masking internal IP addresses.</p>
+        </section>
+
+        <section>
+            <h2>Firewall Setup</h2>
+            <p>Firewalls are essential components of network security, serving as barriers that filter incoming and outgoing network traffic based on predefined rules. By controlling access to a network, firewalls help prevent unauthorized access and protect against various cyber threats.</p>
+            <p>Firewall rules can be configured to allow or block specific types of traffic based on criteria such as source and destination IP addresses, ports, and protocols. Additionally, firewalls can be set up to log and monitor network activity, providing valuable insights into potential security incidents.</p>
+        </section>
+
+        <section>
+            <h2>Summary</h2>
+            <p>Module 3 has provided a comprehensive overview of networking essentials, equipping you with the knowledge and skills needed to understand and manage basic networking concepts. With this foundational knowledge, you will be well-prepared to set up, configure, and maintain networking devices, contributing to the development and management of secure and efficient networks in any organization.</p>
+
+            <h2>Quiz</h2>
+            <form id="quiz-form">
+                <ol>
+                    <li>
+                        <p>What is the purpose of IP addressing?</p>
+                        <label><input type="radio" name="q1" value="A"> A) To encrypt data</label><br>
+                        <label><input type="radio" name="q1" value="B"> B) To manage network traffic</label><br>
+                        <label><input type="radio" name="q1" value="C"> C) To identify devices on a network</label><br>
+                        <label><input type="radio" name="q1" value="D"> D) To compress data</label>
+                    </li>
+                    <li>
+                        <p>What does NAT stand for?</p>
+                        <label><input type="radio" name="q2" value="A"> A) Network Address Translation</label><br>
+                        <label><input type="radio" name="q2" value="B"> B) Network Access Table</label><br>
+                        <label><input type="radio" name="q2" value="C"> C) Network Authentication Token</label><br>
+                        <label><input type="radio" name="q2" value="D"> D) Network Algorithm Technique</label>
+                    </li>
+                    <li>
+                        <p>What is the primary function of a firewall?</p>
+                        <label><input type="radio" name="q3" value="A"> A) Data Encryption</label><br>
+                        <label><input type="radio" name="q3" value="B"> B) Network Monitoring</label><br>
+                        <label><input type="radio" name="q3" value="C"> C) Access Control</label><br>
+                        <label><input type="radio" name="q3" value="D"> D) Data Compression</label>
+                    </li>
+                    <li>
+                        <p>What is subnetting used for?</p>
+                        <label><input type="radio" name="q4" value="A"> A) Increasing Network Speed</label><br>
+                        <label><input type="radio" name="q4" value="B"> B) Reducing Network Costs</label><br>
+                        <label><input type="radio" name="q4" value="C"> C) Dividing a network into smaller sub-networks</label><br>
+                        <label><input type="radio" name="q4" value="D"> D) Encrypting Network Traffic</label>
+                    </li>
+                    <li>
+                        <p>What does ACL stand for?</p>
+                        <label><input type="radio" name="q5" value="A"> A) Access Control List</label><br>
+                        <label><input type="radio" name="q5" value="B"> B) Advanced Compression Layer</label><br>
+                        <label><input type="radio" name="q5" value="C"> C) Address Configuration Logic</label><br>
+                        <label><input type="radio" name="q5" value="D"> D) Authentication and Certification Layer</label>
+                    </li>
+                    <li>
+                        <p>What is the primary purpose of subnet masks?</p>
+                        <label><input type="radio" name="q6" value="A"> A) To encrypt data</label><br>
+                        <label><input type="radio" name="q6" value="B"> B) To define network boundaries</label><br>
+                        <label><input type="radio" name="q6" value="C"> C) To compress data</label><br>
+                        <label><input type="radio" name="q6" value="D"> D) To manage network traffic</label>
+                    </li>
+                    <li>
+                        <p>Which of the following is a benefit of Network Address Translation (NAT)?</p>
+                        <label><input type="radio" name="q7" value="A"> A) Increases network speed</label><br>
+                        <label><input type="radio" name="q7" value="B"> B) Reduces network costs</label><br>
+                        <label><input type="radio" name="q7" value="C"> C) Allows multiple devices to share a single public IP address</label><br>
+                        <label><input type="radio" name="q7" value="D"> D) Encrypts network traffic</label>
+                    </li>
+                    <li>
+                        <p>What is the primary purpose of a router?</p>
+                        <label><input type="radio" name="q8" value="A"> A) Data encryption</label><br>
+                        <label><input type="radio" name="q8" value="B"> B) Network monitoring</label><br>
+                        <label><input type="radio" name="q8" value="C"> C) Forwarding data packets between networks</label><br>
+                        <label><input type="radio" name="q8" value="D"> D) Data compression</label>
+                    </li>
+                    <li>
+                        <p>What does ICMP stand for?</p>
+                        <label><input type="radio" name="q9" value="A"> A) Internet Control Message Protocol</label><br>
+                        <label><input type="radio" name="q9" value="B"> B) Internet Communication Message Protocol</label><br>
+                        <label><input type="radio" name="q9" value="C"> C) Internal Control Message Protocol</label><br>
+                        <label><input type="radio" name="q9" value="D"> D) Internal Communication Message Protocol</label>
+                    </li>
+                    <li>
+                        <p>What is the main function of a firewall in a network?</p>
+                        <label><input type="radio" name="q10" value="A"> A) Data Encryption</label><br>
+                        <label><input type="radio" name="q10" value="B"> B) Access Control</label><br>
+                        <label><input type="radio" name="q10" value="C"> C) Network Monitoring</label><br>
+                        <label><input type="radio" name="q10" value="D"> D) Data Compression</label>
+                    </li>
+                </ol>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cybersecurity Training App</p>
+    </footer>
+</body>
+</html>
